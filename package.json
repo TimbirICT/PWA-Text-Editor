@@ -1,15 +1,17 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Progressive Web Application Text Editor",
+  "main": "server/server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start:dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "start": "npm start",
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "build": "npm run build",
+    "build:client": "webpack --config client/webpack.config.js",
+    "install": "npm i",
+    "client:dev": "webpack --config client/webpack.config.js --watch"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,9 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }
