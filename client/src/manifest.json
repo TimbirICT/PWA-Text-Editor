@@ -2,7 +2,7 @@
     "name": "Simple Text Editor",
     "short_name": "TextEditor",
     "description": "A simple text editor that can be used to create logos.",
-    "start_url": "./index.html",
+    "start_url": "./dist/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
@@ -13,5 +13,4 @@
         "type": "image/png"
       }
     ]
-  }
-  
+}
