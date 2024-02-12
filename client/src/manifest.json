@@ -1,0 +1,17 @@
+{
+    "name": "Simple Text Editor",
+    "short_name": "TextEditor",
+    "description": "A simple text editor that can be used to create logos.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "/path/to/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
