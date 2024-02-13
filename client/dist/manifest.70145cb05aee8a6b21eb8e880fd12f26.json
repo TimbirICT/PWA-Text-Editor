@@ -3,8 +3,8 @@
   "short_name": "JATE",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": ".",
-  "description": "",
+  "start_url": "./index.html",
+  "description": "Text editor for browsers",
   "background_color": "#ffffff",
   "theme_color": "#31a9e1"
 }
