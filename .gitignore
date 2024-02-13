@@ -63,6 +63,7 @@ typings/
 # lock files
 package-lock.json
 yarn.lock
+node_modules/
 
 .DS_Store
 .vscode
