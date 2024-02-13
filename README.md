@@ -2,6 +2,10 @@
 A text editor browser app that can help you create logos.
 
 ## Table of Contents
+- [Description](#Description)
+- [Usage](#Usage)
+- [Sources](#Sources)
+- [Author](#Author)
 
 
 ## Description
