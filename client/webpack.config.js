@@ -23,15 +23,20 @@ module.exports = () => {
         name: 'JATE',
         short_name: 'JATE',
         description: 'Text editor for browsers',
-        start_url: './index.html',
+        start_url: './',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#31a9e1',
-        icons: [],
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+          },
+        ],
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
     ],
     module: {
@@ -43,6 +48,7 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
